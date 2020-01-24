@@ -1,18 +1,15 @@
-import Slide from "../Slide";
+import Slide from '../Slide'
 
 class BackToTheFutureSlide extends Slide {
-
   public async init() {
-    this.add(this.build.title("<back to the future video>"));
+    this.add(this.build.title('<back to the future video>'))
 
-    this.steps = [];
+    this.steps = []
   }
 
-  onEnter() {
-  }
+  onEnter() {}
 
-  onExit() {
-  }
+  onExit() {}
 }
 
-export default BackToTheFutureSlide;
+export default BackToTheFutureSlide

@@ -1,14 +1,14 @@
-import defaultTheme from "./defaultTheme";
-import Theme from "./Theme";
+import defaultTheme from './defaultTheme'
+import Theme from './Theme'
 
-let currentTheme = defaultTheme;
+let currentTheme = defaultTheme
 
 function getCurrentTheme() {
-  return currentTheme;
+  return currentTheme
 }
 
 function setCurrentTheme(theme: Theme) {
-  currentTheme = theme;
+  currentTheme = theme
 }
 
-export { getCurrentTheme, setCurrentTheme };
+export { getCurrentTheme, setCurrentTheme }

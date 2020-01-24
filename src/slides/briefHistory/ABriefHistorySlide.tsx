@@ -1,17 +1,14 @@
-import Slide from "../Slide";
+import Slide from '../Slide'
 
 class ABriefHistorySlide extends Slide {
-
   public async init() {
-    this.add(this.build.title("JS: A brief history"));
-    this.steps = [];
+    this.add(this.build.title('JS: A brief history'))
+    this.steps = []
   }
 
-  onEnter() {
-  }
+  onEnter() {}
 
-  onExit() {
-  }
+  onExit() {}
 }
 
-export default ABriefHistorySlide;
+export default ABriefHistorySlide

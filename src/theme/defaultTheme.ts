@@ -1,6 +1,6 @@
-import Theme from "./Theme";
+import Theme from './Theme'
 
-const [canvasWidth, canvasHeight] = [1920, 1080];
+const [canvasWidth, canvasHeight] = [1920, 1080]
 
 const theme: Theme = {
   /** The unscaled width of the canvas. */
@@ -13,13 +13,13 @@ const theme: Theme = {
   safeMarginX: canvasWidth * 0.04,
 
   /** Vertical margin to prevent content from being cropped, expressed as a 0..1 percentage of the canvas width. */
-  safeMarginY: canvasHeight * 0.10,
+  safeMarginY: canvasHeight * 0.1,
 
   /** The colour of the slide background, expressed as a hexadecimal colour e.g. 0xFFFFFF. */
   backgroundColor: 0x282d64,
 
   /** The font to use for titles. **/
-  titleFontFamily: "League Spartan",
+  titleFontFamily: 'League Spartan',
 
   /** The size of the title text. */
   titleFontSize: 100,
@@ -31,7 +31,7 @@ const theme: Theme = {
   titleOffsetY: -32,
 
   /** The font to use for body text. **/
-  bodyFontFamily: "Lato"
-};
+  bodyFontFamily: 'Lato'
+}
 
-export default theme;
+export default theme
