@@ -16,7 +16,7 @@ const theme: Theme = {
   safeMarginY: canvasHeight * 0.1,
 
   /** The colour of the slide background, expressed as a hexadecimal colour e.g. 0xFFFFFF. */
-  backgroundColor: 0x282d64,
+  backgroundColor: '#282d64',
 
   /** The font to use for titles. **/
   titleFontFamily: 'League Spartan',

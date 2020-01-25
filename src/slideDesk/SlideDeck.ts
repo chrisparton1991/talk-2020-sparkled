@@ -1,7 +1,6 @@
 import Mousetrap from 'mousetrap'
 import * as PIXI from 'pixi.js'
 import ElementBuilder from '../elements/ElementBuilder'
-import GlobalObject from '../globalObjects/GlobalObject'
 import { noop } from '../interactions/Interactions'
 import Slide from '../slides/Slide'
 import { getCurrentTheme } from '../theme/currentTheme'
@@ -39,16 +38,6 @@ class SlideDeck {
     }
   }
 
-  public async loadGlobalObjects(
-    loadFn: (slideDeck: SlideDeck) => GlobalObject<PIXI.DisplayObject>[]
-  ) {
-    const globalObjects = loadFn(this)
-    for (const globalObject of globalObjects) {
-      await globalObject.init()
-      this.canvas.addChild(globalObject.getChild())
-    }
-  }
-
   public async show() {
     this.app.stage.addChild(this.canvas)
     this.currentSlide().show()
@@ -75,15 +64,6 @@ class SlideDeck {
   }
 
   private drawCanvasBackground() {
-    const { backgroundColor, canvasWidth, canvasHeight } = getCurrentTheme()
-
-    this.background.zIndex = 1
-    this.background.clear()
-    this.background.beginFill(backgroundColor)
-    this.background.drawRect(0, 0, canvasWidth, canvasHeight)
-    this.background.endFill()
-
-    this.canvas.addChild(this.background)
   }
 
   private drawCanvasBounds() {

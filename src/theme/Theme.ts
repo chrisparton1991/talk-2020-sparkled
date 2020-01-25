@@ -11,8 +11,8 @@ interface Theme {
   /** Vertical margin to prevent content from being cropped, expressed as a pixel value. */
   safeMarginY: number
 
-  /** The colour of the slide background, expressed as a hexadecimal colour e.g. 0xFFFFFF. */
-  backgroundColor: number
+  /** The colour of the slide background. */
+  backgroundColor: string
 
   /** The font to use for titles. **/
   titleFontFamily: string
